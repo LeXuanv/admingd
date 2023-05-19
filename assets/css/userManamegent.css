@@ -1,0 +1,21 @@
+#user{
+    background-color: #32c4f0;
+}
+.content{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.list{
+    width: 100%;
+    background-color: #32c4f0;
+    margin: 20px;
+}
+table{
+    width: 100%;
+    margin: 10px;
+}
+table th{
+    width: 14,5% ;
+}

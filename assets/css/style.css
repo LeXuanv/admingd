@@ -1,0 +1,64 @@
+*{ 
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+   }
+.all{
+    display: flex;
+    flex-direction: column;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+}
+.header .logo{
+    width: 25%;
+}
+.header .logo img{
+    width: 100%;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    margin-right: 3%;
+}
+.navbar .icon{
+    margin-right: 10px;
+}
+.icon i{
+    font-size: 20px;
+}
+.login a{
+    text-decoration: none;
+}
+.slidebar{
+    display: flex;
+    width: 100%;
+    position: fixed;
+    top: 10%;
+    
+    margin-top: 15px;
+}
+.nav{
+    width: 25%;
+    border-right: 1px solid black;
+
+}
+.nav #items li{
+    margin-top: 15px;
+    padding: 10px;
+    
+}
+.nav #items li:hover{
+    cursor: pointer;
+    background-color: azure;
+}
+.nav #items li a{
+    margin-left: 5%;
+    text-decoration: none;
+    color: black;
+    
+    
+}

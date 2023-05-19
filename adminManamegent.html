@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Admin</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/adminManamegent.css">
+    <link rel="stylesheet" href="./assets/css/modal.css">
+</head>
+<body>
+    <div class="all">
+        <div class="header">
+            <div class="logo">
+                <img src="./assets/images/bg-shop.jpg" alt="">
+            </div>
+            <div class="navbar">
+                <div class="icon">
+                    <i class="fa-solid fa-bell"></i>
+                </div>
+                <div class="login">
+                    <a href="">Đăng ký | </a>
+                    <a href="./login.html">Đăng nhập</a>
+                </div>
+            </div>
+        </div>
+        <div class="slidebar">
+            <div class="nav">
+                <ul id="items">
+                    <li id ="admin"><a href="./adminManamegent.html">Quản lý admin</a></li>
+                    <li><a href="./userManamengent.html">Quản lý người dùng</a></li>
+                    <li><a href="./productManamegent.html">Quản lý sản phẩm</a></li>
+                    <li><a href="./catalogManamegent.html">Quản lý danh mục</a></li>
+                    <li><a href="./oder.html">Đơn hàng</a></li>
+                    <li><a href="./orderDetails.html">Chi tiết đơn hàng</a></li>
+                    <li><a href="#">Hỗ trợ trang chủ</a></li>
+                    <li><a href="#">Hỗ trợ quản lý tài khoản</a></li>
+                    <li><a href="#">Hỗ trợ quản lý giao diện</a></li>
+                    <li><a href="#">Hỗ trợ quản lý tùy chỉnh</a></li>
+                </ul>
+            </div> 
+            <div class="content">
+                <a href="#open">Thêm admin</a>
+                <div class="list" >
+                    <h2>Danh sách admin</h2>
+                    <table id="render">
+                        <head>
+                            <tr>
+                                <th>Id</th>
+                                <th>Tên đăng nhập</th>
+                                <th>Tên admin</th>
+                                <th>Hành động</th>
+                                <!-- <th>Hành động</th> -->
+                            </tr>
+                            
+                        </head>
+                    </table>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <!-- modal layout -->
+    <div class="modal" id="open">
+        <a href="#" class="close"></a>
+        <div class="modal-overlay" class=""></div>
+        <div class="modal-body">
+            <div class="modal-inner">
+                <div class="admin-title">
+                    <h1>Thêm ADMIN</h1>
+                </div>
+                <h3 class="id">ID:</h3>
+                <input type="text" placeholder="ID" id="tenId">
+                <h3 class="username">Username:</h3>
+                <input type="text" placeholder="Username" id="tenDn">
+                <h3 class="Password">Password</h3>
+                <input type="password" placeholder="Password" id="password">
+                <h3 class="name">Tên admin</h3>
+                <input type="text" placeholder="Tên admin" id="tenAdmin">
+                <button class="Add" onclick="add()" >Thêm</button>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/js/adminManamegent.js"></script>
+</body>
+</html>
