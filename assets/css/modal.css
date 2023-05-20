@@ -1,23 +1,23 @@
-.modal{
+.modal {
     position: fixed;
     top: 0;
     right: 0;
     left: 0;
     bottom: 0;
     display: none;
+    z-index: 10;
 }
-.modal:target{
+.modal:target {
     display: flex;
-
 }
-.modal-overlay{
+.modal-overlay {
     position: absolute;
     width: 100%;
     height: 100%;
     background-color: rgb(0, 0, 0, 0.4);
 }
-.modal-body{
-    background-color:white;
+.modal-body {
+    background-color: white;
     margin: auto;
     position: relative;
     z-index: 2;

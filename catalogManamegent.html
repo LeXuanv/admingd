@@ -32,12 +32,11 @@
                     <li id ="admin"><a href="./adminManamegent.html">Quản lý admin</a></li>
                     <li><a href="./userManamengent.html">Quản lý người dùng</a></li>
                     <li><a href="./productManamegent.html">Quản lý sản phẩm</a></li>
-                    <li><a href="./catalogManamegent.html">Quản lý danh mục</a></li>
+                    <li class="active"><a href="./catalogManamegent.html">Quản lý danh mục</a></li>
                     <li><a href="./oder.html">Đơn hàng</a></li>
                 </ul>
             </div> 
             <div class="content">
-                <a href="#open">Thêm chuyên mục</a>
                 <table id="render">
                     <tr>
                         <th>Id</th>
@@ -48,32 +47,33 @@
                     </tr>
                     <tr>
                         <td>1</th>
-                        <td>test</th>
+                        <td>T-SHIRTS</th>
                         <td>Tran Hoan</th>
                         <td>
-                            <button >Sửa</button> 
-                            <button >Xóa</button>
+                            <button class="act-btn edit-btn" >Sửa</button> 
+                            <button class="act-btn delete-btn" >Xóa</button>
                         </td>
                     </tr>
                     <tr>
-                        <td>1</th>
-                        <td>test</th>
+                        <td>2</th>
+                        <td>SWEATERS</th>
                         <td>Tran Hoan</th>
                         <td>
-                            <button >Sửa</button> 
-                            <button >Xóa</button>
+                            <button class="act-btn edit-btn" >Sửa</button> 
+                            <button class="act-btn delete-btn" >Xóa</button>
                         </td>
                     </tr>
                     <tr>
-                        <td>1</th>
-                        <td>test</th>
+                        <td>3</th>
+                        <td>HOODIES</th>
                         <td>Tran Hoan</th>
                         <td>
-                            <button class="act-btn">Sửa</button> 
-                            <button class="act-btn">Xóa</button>
+                            <button class="act-btn edit-btn" >Sửa</button> 
+                            <button class="act-btn delete-btn" >Xóa</button>
                         </td>
                     </tr>
                 </table>
+                <a href="#open">Thêm chuyên mục</a>
             </div>
         </div>
     </div>
@@ -86,13 +86,19 @@
                 <div class="admin-title">
                     <h1>Thêm chuyên mục</h1>
                 </div>
-                <h3 class="id">ID:</h3>
-                <input type="text" placeholder="ID" id="tenId">
-                <h3 class="username">Tên chuyển mục</h3>
-                <input type="text" placeholder="Tên chuyên mục" id="tenChuyenMuc">
-                <h3 class="Password">chuyên mục cha</h3>
-                <input type="text" placeholder="Chuyên mục cha" id="chuyenMucCha">
-                <button class="Add" onclick="add()" >Thêm</button>
+                <div class="form-group">
+                    <label class="id">ID:</label>
+                    <input class="form-control" type="text" placeholder="ID" id="tenId" />
+                </div>
+                <div class="form-group">
+                    <label class="username">Tên chuyển mục</label>
+                    <input class="form-control" type="text" placeholder="Tên chuyên mục" id="tenChuyenMuc" />
+                </div>
+                <div class="form-group">
+                    <label class="Password">chuyên mục cha</label>
+                    <input class="form-control" type="text" placeholder="Chuyên mục cha" id="chuyenMucCha" />
+                </div>
+                <button class="Add" onclick="add()">Thêm</button>
             </div>
         </div>
     </div>
