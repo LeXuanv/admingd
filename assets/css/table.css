@@ -22,17 +22,27 @@
     cursor: pointer;
     background-color: #32c4f0;
 }
-.list{
-    width: 100%;
-    background-color: #32c4f0;
-    margin: 20px;
+
+#render {
+font-family: Arial, Helvetica, sans-serif;
+border-collapse: collapse;
+width: 100%;
 }
-table{
-    width: 100%;
-    margin: 10px;
+
+#render td, #render th {
+border: 1px solid #ddd;
+padding: 8px;
 }
-table th{
-    width: 25%;
+
+#render tr:nth-child(even){background-color: #f2f2f2;}
+
+
+#render th {
+padding-top: 12px;
+padding-bottom: 12px;
+text-align: left;
+background-color: #32c4f0;
+color: white;
 }
 /* modal */
 .modal-inner{

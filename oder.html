@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <title>Admin</title>
     <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/oder.css">
+    <link rel="stylesheet" href="./assets/css/table.css">
+    <link rel="stylesheet" href="./assets/css/modal.css">
 </head>
-
 <body>
     <div class="all">
         <div class="header">
@@ -29,41 +29,85 @@
         <div class="slidebar">
             <div class="nav">
                 <ul id="items">
-                    <li><a href="./adminManamegent.html">Quản lý admin</a></li>
-                    <li ><a  href="./userManamengent.html">Quản lý người dùng</a></li>
+                    <li id ="admin"><a href="./adminManamegent.html">Quản lý admin</a></li>
+                    <li><a href="./userManamengent.html">Quản lý người dùng</a></li>
                     <li><a href="./productManamegent.html">Quản lý sản phẩm</a></li>
                     <li><a href="./catalogManamegent.html">Quản lý danh mục</a></li>
-                    <li id="oder"><a href="./oder.html">Đơn hàng</a></li>
-                    <li><a href="./orderDetails.html">Chi tiết đơn hàng</a></li>
-                    <li><a href="#">Hỗ trợ trang chủ</a></li>
-                    <li><a href="#">Hỗ trợ quản lý tài khoản</a></li>
-                    <li><a href="#">Hỗ trợ quản lý giao diện</a></li>
-                    <li><a href="#">Hỗ trợ quản lý tùy chỉnh</a></li>
+                    <li><a href="./oder.html">Đơn hàng</a></li>
                 </ul>
             </div> 
             <div class="content">
-                <div class="list" >
-                    <h2>Danh sách user</h2>
-                    <table id="render">
-                        <head>
-                            <tr>
-                                <th>#</th>
-                                <th>Tài khoản user</th>
-                                <th>Họ tên</th>
-                                <th>Email</th>
-                                <th>Sđt</th>
-                                <th>Địa chỉ</th>
-                                <th>Ghi chú</th>
-                                <th>Tổng tiền</th>
-                                <th>Phương thức Thanh Toán</th>
-                                <th>Trạng thái</th>
-                                <th>Ngày tạo</th>
-                                
-                            </tr>
-                            
-                        </head>
-                    </table>
-                </div>
+                <table id="render">
+                    <tr>
+                        <th>#</th>
+                        <th>Tài khoản user</th>
+                        <th>Họ</th>
+                        <th>Tên</th>
+                        <th>Email</th>
+                        <th>Sđt</th>
+                        <th>Phường</th>
+                        <th>Quân</th>
+                        <th>Thành phố</th>
+                        <th>Ghi chú</th>
+                        <th>Tổng tiền</th>
+                        <th>Trạng thái</th>
+                        <th>Ngày tạo</th>
+                    </tr>
+                    <tr>
+                        <td>1</th>
+                        <td>test</th>
+                        <td>Tran Hoan</th>
+                        <td>Tran Hoan</th>
+                        <td>1</th>
+                        <td>test</th>
+                        <td>Tran Hoan</th>
+                        <td>Tran Hoan</th>
+                        <td>1</th>
+                        <td>test</th>
+                        <td>Tran Hoan</th>
+                        <td>Tran Hoan</th>
+                        <td>
+                            <button >Sửa</button> 
+                            <button >Xóa</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>1</th>
+                        <td>test</th>
+                        <td>Tran Hoan</th>
+                        <td>Tran Hoan</th>
+                        <td>1</th>
+                        <td>test</th>
+                        <td>Tran Hoan</th>
+                        <td>Tran Hoan</th>
+                        <td>1</th>
+                        <td>test</th>
+                        <td>Tran Hoan</th>
+                        <td>Tran Hoan</th>
+                        <td>
+                            <button >Sửa</button> 
+                            <button >Xóa</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>1</th>
+                        <td>test</th>
+                        <td>Tran Hoan</th>
+                        <td>Tran Hoan</th>
+                        <td>1</th>
+                        <td>test</th>
+                        <td>Tran Hoan</th>
+                        <td>Tran Hoan</th>
+                        <td>1</th>
+                        <td>test</th>
+                        <td>Tran Hoan</th>
+                        <td>Tran Hoan</th>
+                        <td>
+                            <button >Sửa</button> 
+                            <button >Xóa</button>
+                        </td>
+                    </tr>
+                </table>
             </div>
         </div>
     </div>

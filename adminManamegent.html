@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <title>Admin</title>
     <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/adminManamegent.css">
+    <link rel="stylesheet" href="./assets/css/table.css">
     <link rel="stylesheet" href="./assets/css/modal.css">
 </head>
 <body>
@@ -34,30 +34,46 @@
                     <li><a href="./productManamegent.html">Quản lý sản phẩm</a></li>
                     <li><a href="./catalogManamegent.html">Quản lý danh mục</a></li>
                     <li><a href="./oder.html">Đơn hàng</a></li>
-                    <li><a href="./orderDetails.html">Chi tiết đơn hàng</a></li>
-                    <li><a href="#">Hỗ trợ trang chủ</a></li>
-                    <li><a href="#">Hỗ trợ quản lý tài khoản</a></li>
-                    <li><a href="#">Hỗ trợ quản lý giao diện</a></li>
-                    <li><a href="#">Hỗ trợ quản lý tùy chỉnh</a></li>
                 </ul>
             </div> 
             <div class="content">
                 <a href="#open">Thêm admin</a>
-                <div class="list" >
-                    <h2>Danh sách admin</h2>
-                    <table id="render">
-                        <head>
-                            <tr>
-                                <th>Id</th>
-                                <th>Tên đăng nhập</th>
-                                <th>Tên admin</th>
-                                <th>Hành động</th>
-                                <!-- <th>Hành động</th> -->
-                            </tr>
-                            
-                        </head>
-                    </table>
-                </div>
+                <table id="render">
+                    <tr>
+                        <th>Id</th>
+                        <th>Tên đăng nhập</th>
+                        <th>Tên admin</th>
+                        <th>Hành động</th>
+                        <!-- <th>Hành động</th> -->
+                    </tr>
+                    <tr>
+                        <td>1</th>
+                        <td>test</th>
+                        <td>Tran Hoan</th>
+                        <td>
+                            <button >Sửa</button> 
+                            <button >Xóa</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>1</th>
+                        <td>test</th>
+                        <td>Tran Hoan</th>
+                        <td>
+                            <button >Sửa</button> 
+                            <button >Xóa</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>1</th>
+                        <td>test</th>
+                        <td>Tran Hoan</th>
+                        <td>
+                            <button class="act-btn">Sửa</button> 
+                            <button class="act-btn">Xóa</button>
+                        </td>
+                    </tr>
+                </table>
             </div>
             
         </div>
