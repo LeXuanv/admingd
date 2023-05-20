@@ -86,6 +86,11 @@
     z-index: 2;
 }
 
+.edit-btn,
+.delete-btn {
+    margin: 3px 0;
+}
+
 .edit-btn {
     background-color: #2ea44f;
 }
@@ -100,4 +105,9 @@
 
 .product-size {
     width: 20px;
+}
+
+.product-desc {
+    /* display: block; */
+    width: 200px;
 }
