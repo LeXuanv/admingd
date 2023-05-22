@@ -7,6 +7,9 @@
     display: none;
     z-index: 10;
 }
+.modal-inner::-webkit-scrollbar {
+    display: none;
+}
 .modal:target {
     display: flex;
 }
