@@ -92,7 +92,8 @@
     margin-bottom: 20px;
 }
 
-.product-info {
+.info-wrapper {
+    margin-bottom: 16px;
     display: flex;
 }
 
@@ -162,4 +163,9 @@
     border-radius: 5px;
     background: #32c4f0;
     cursor: pointer;
+}
+
+.product-info {
+    display: flex;
+    flex-direction: column;
 }
