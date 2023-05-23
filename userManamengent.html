@@ -58,7 +58,7 @@
                         <td>Mỗ Lao</th>
                         <td>Hà Đông</th>
                         <td>Hà Nội</th>
-                        <td>
+                        <td class="action">
                             <button class="act-btn edit-btn" >Sửa</button> 
                             <button class="act-btn delete-btn" >Xóa</button>
                         </td>
@@ -72,7 +72,7 @@
                         <td>Mỗ Lao</th>
                         <td>Hà Đông</th>
                         <td>Hà Nội</th>
-                        <td>
+                        <td class="action">
                             <button class="act-btn edit-btn" >Sửa</button> 
                             <button class="act-btn delete-btn" >Xóa</button>
                         </td>
@@ -86,7 +86,7 @@
                         <td>Mỗ Lao</th>
                         <td>Hà Đông</th>
                         <td>Hà Nội</th>
-                        <td>
+                        <td class="action">
                             <button class="act-btn edit-btn" >Sửa</button> 
                             <button class="act-btn delete-btn" >Xóa</button>
                         </td>
@@ -95,5 +95,43 @@
             </div>
         </div>
     </div>
+
+    <!-- modal layout -->
+    <div class="modal">
+        <div class="modal-overlay"></div>
+        <div class="modal-body">
+            <i class="close-icon fa-solid fa-xmark"></i>
+            <div class="modal-title">
+                <h1>Thông tin người dùng</h1>
+            </div>
+            <div class="modal-content">
+                <div class="wrapper">
+                    <div class="form-group">
+                        <label class="id">ID:</label>
+                        <input class="form-control" type="text" placeholder="ID" id="tenId" />
+                    </div>
+                    <div class="form-group">
+                        <label class="username">Họ tên</label>
+                        <input class="form-control" type="text" placeholder="Họ tên" />
+                    </div>
+                    <div class="form-group">
+                        <label class="Password">Email</label>
+                        <input class="form-control" type="text" placeholder="Email" />
+                    </div>
+                    <div class="form-group">
+                        <label class="Password">Số điện thoại</label>
+                        <input class="form-control" type="text" placeholder="Số điện thoại" />
+                    </div>
+                    <div class="form-group">
+                        <label class="Password">Địa chỉ</label>
+                        <input class="form-control" type="text" placeholder="Địa chỉ" />
+                    </div>
+                    <button class="Add" onclick="add()">Thêm</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./assets/js/modal.js"></script>
 </body>
 </html>
