@@ -78,35 +78,40 @@
             
         </div>
     </div>
+
     <!-- modal layout -->
-    <div class="modal" id="open">
-        <a href="#" class="close"></a>
-        <div class="modal-overlay" class=""></div>
+    <div class="modal">
+        <div class="modal-overlay"></div>
         <div class="modal-body">
-            <div class="modal-inner">
-                <div class="admin-title">
-                    <h1>Thêm ADMIN</h1>
+            <i class="close-icon fa-solid fa-xmark"></i>
+            <div class="admin-title">
+                <h1>Thêm ADMIN</h1>
+            </div>
+            <div class="modal-content">
+                <div class="wrapper">
+                    <div class="form-group">
+                        <label class="id">ID:</label>
+                        <input class="form-control" type="text" placeholder="ID" id="tenId" />
+                    </div>
+                    <div class="form-group">
+                        <label class="username">Username:</label>
+                        <input class="form-control" type="text" placeholder="Username" id="tenDn" />
+                    </div>
+                    <div class="form-group">
+                        <label class="Password">Password</label>
+                        <input class="form-control" type="password" placeholder="Password" id="password" />
+                    </div>
+                    <div class="form-group">
+                        <label class="name">Tên admin</label>
+                        <input class="form-control" type="text" placeholder="Tên admin" id="tenAdmin" />
+                    </div>
+                    <button class="Add" onclick="add()">Thêm</button>
                 </div>
-                <div class="form-group">
-                    <label class="id">ID:</label>
-                    <input class="form-control" type="text" placeholder="ID" id="tenId" />
-                </div>
-                <div class="form-group">
-                    <label class="username">Username:</label>
-                    <input class="form-control" type="text" placeholder="Username" id="tenDn" />
-                </div>
-                <div class="form-group">
-                    <label class="Password">Password</label>
-                    <input class="form-control" type="password" placeholder="Password" id="password" />
-                </div>
-                <div class="form-group">
-                    <label class="name">Tên admin</label>
-                    <input class="form-control" type="text" placeholder="Tên admin" id="tenAdmin" />
-                </div>
-                <button class="Add" onclick="add()">Thêm</button>
             </div>
         </div>
     </div>
+    
+    <script src="./assets/js/modal.js"></script>
     <script src="./assets/js/adminManamegent.js"></script>
 </body>
 </html>
