@@ -37,34 +37,37 @@
                 </ul>
             </div> 
             <div class="content">
-                <table id="render">
+                <table id="render-order">
                     <tr>
-                        <th>#</th>
-                        <th>Tài khoản user</th>
-                        <th>Họ</th>
-                        <th>Tên</th>
-                        <th>Email</th>
-                        <th>Sđt</th>
+                        <th class="id">#</th>
+                        <th class="user-name">Tài khoản user</th>
+                        <th class="first-name">Họ</th>
+                        <th class="last-name">Tên</th>
+                        <th class="email">Email</th>
+                        <th class="phone">Sđt</th>
                         <th>Phường</th>
                         <th>Quân</th>
                         <th>Thành phố</th>
-                        <th>Ghi chú</th>
-                        <th>Tổng tiền</th>
+                        <th class="desc">Ghi chú</th>
+                        <th class="price">Tổng tiền</th>
                         <th>Trạng thái</th>
                         <th>Hành động</th>
                     </tr>
                     <tr>
-                        <td>1</th>
-                        <td>test1</th>
-                        <td>Tran Cong</th>
-                        <td>Hoan</th>
-                        <td>admin1@gmail.com</th>
-                        <td>0987654321</th>
+                        <td class="id">1</th>
+                        <td class="user-name">test1</th>
+                        <td class="first-name">Tran Cong</th>
+                        <td class="last-name">Hoan</th>
+                        <td class="email">admin1@gmail.com</th>
+                        <td class="phone">0987654321</th>
                         <td>Mỗ Lao</th>
                         <td>Hà Đông</th>
                         <td>Hà Nội</th>
-                        <td>...</th>
-                        <td>200.000đ</th>
+                        <td class="desc">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, exercitationem? Nam dolorum numquam maxime ipsum,
+                            magnam molestiae autem enim dolore sapiente et laborum non cumque harum consequuntur eum excepturi dolor nostrum
+                        </th>
+                        <td class="price">200.000đ</th>
                         <td>Chờ xác nhận</th>
                         <td class="action">
                             <button class="act-btn edit-btn" >Xem</button> 
@@ -73,17 +76,20 @@
                         </td>
                     </tr>
                     <tr>
-                        <td>2</th>
-                        <td>test2</th>
-                        <td>Tran Cong</th>
-                        <td>Hoan</th>
-                        <td>admin1@gmail.com</th>
-                        <td>0987654321</th>
+                        <td class="id">2</th>
+                        <td class="user-name">test2</th>
+                        <td class="first-name">Tran Cong</th>
+                        <td class="last-name">Hoan</th>
+                        <td class="email">admin1@gmail.com</th>
+                        <td class="phone">0987654321</th>
                         <td>Mỗ Lao</th>
                         <td>Hà Đông</th>
                         <td>Hà Nội</th>
-                        <td>...</th>
-                        <td>200.000đ</th>
+                        <td class="desc">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, exercitationem? Nam dolorum numquam maxime ipsum,
+                            magnam molestiae autem enim dolore sapiente et laborum non cumque harum consequuntur eum excepturi dolor nostrum
+                        </th>
+                        <td class="price">200.000đ</th>
                         <td>Đang giao hàng</th>
                         <td class="action">
                             <button class="act-btn edit-btn" >Xem</button> 
@@ -92,17 +98,86 @@
                         </td>
                     </tr>
                     <tr>
-                        <td>3</th>
-                        <td>test3</th>
-                        <td>Tran Cong</th>
-                        <td>Hoan</th>
-                        <td>admin1@gmail.com</th>
-                        <td>0987654321</th>
+                        <td class="id">3</th>
+                        <td class="user-name">test3</th>
+                        <td class="first-name">Tran Cong</th>
+                        <td class="last-name">Hoan</th>
+                        <td class="email">admin1@gmail.com</th>
+                        <td class="phone">0987654321</th>
                         <td>Mỗ Lao</th>
                         <td>Hà Đông</th>
                         <td>Hà Nội</th>
-                        <td>...</th>
-                        <td>200.000đ</th>
+                        <td class="desc">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, exercitationem? Nam dolorum numquam maxime ipsum,
+                            magnam molestiae autem enim dolore sapiente et laborum non cumque harum consequuntur eum excepturi dolor nostrum
+                        </th>
+                        <td class="price">200.000đ</th>
+                        <td>Chờ xác nhận</th>
+                        <td class="action">
+                            <button class="act-btn edit-btn" >Xem</button> 
+                            <button class="act-btn accept-btn" >Xác nhận</button>
+                            <button class="act-btn delete-btn" >Xóa</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="id">3</th>
+                        <td class="user-name">test3</th>
+                        <td class="first-name">Tran Cong</th>
+                        <td class="last-name">Hoan</th>
+                        <td class="email">admin1@gmail.com</th>
+                        <td class="phone">0987654321</th>
+                        <td>Mỗ Lao</th>
+                        <td>Hà Đông</th>
+                        <td>Hà Nội</th>
+                        <td class="desc">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, exercitationem? Nam dolorum numquam maxime ipsum,
+                            magnam molestiae autem enim dolore sapiente et laborum non cumque harum consequuntur eum excepturi dolor nostrum
+                        </th>
+                        <td class="price">200.000đ</th>
+                        <td>Chờ xác nhận</th>
+                        <td class="action">
+                            <button class="act-btn edit-btn" >Xem</button> 
+                            <button class="act-btn accept-btn" >Xác nhận</button>
+                            <button class="act-btn delete-btn" >Xóa</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="id">3</th>
+                        <td class="user-name">test3</th>
+                        <td class="first-name">Tran Cong</th>
+                        <td class="last-name">Hoan</th>
+                        <td class="email">admin1@gmail.com</th>
+                        <td class="phone">0987654321</th>
+                        <td>Mỗ Lao</th>
+                        <td>Hà Đông</th>
+                        <td>Hà Nội</th>
+                        <td class="desc">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, exercitationem? Nam dolorum numquam maxime ipsum,
+                            magnam molestiae autem enim dolore sapiente et laborum non cumque harum consequuntur eum excepturi dolor nostrum
+                        </th>
+                        <td class="price">200.000đ</th>
+                        <td>Chờ xác nhận</th>
+                        <td class="action">
+                            <button class="act-btn edit-btn" >Xem</button> 
+                            <button class="act-btn accept-btn" >Xác nhận</button>
+                            <button class="act-btn delete-btn" >Xóa</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="id">3</th>
+                        <td class="user-name">test3</th>
+                        <td class="first-name">Tran Cong</th>
+                        <td class="last-name">Hoan</th>
+                        <td class="email">admin1@gmail.com</th>
+                        <td class="phone">0987654321</th>
+                        <td>Mỗ Lao</th>
+                        <td>Hà Đông</th>
+                        <td>Hà Nội</th>
+                        <td class="desc">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, exercitationem? Nam dolorum numquam maxime ipsum,
+                            magnam molestiae autem enim dolore sapiente et laborum non cumque harum consequuntur eum excepturi dolor nostrum
+                        </th>
+                        <td class="price">200.000đ</th>
                         <td>Chờ xác nhận</th>
                         <td class="action">
                             <button class="act-btn edit-btn" >Xem</button> 
