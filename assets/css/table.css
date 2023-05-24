@@ -127,7 +127,7 @@
 }
 
 .product-thumb img {
-    width: 150px;
+    width: 130px;
 }
 
 .content {
@@ -144,10 +144,10 @@ body::-webkit-scrollbar {
     left: 215px;
 }
 
-#render-product {
+/* #render-product {
     position: relative;
-    left: 10px;
-}
+    left: 0;
+} */
 
 td {
     min-width: 100px;
