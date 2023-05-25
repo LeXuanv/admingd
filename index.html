@@ -1,42 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <title>Admin</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/table.css">
-    <link rel="stylesheet" href="./assets/css/modal.css">
-</head>
-<body>
-    <div class="all">
-        <div class="header">
-            <div class="logo">
-                <img src="./assets/images/bg-shop.jpg" alt="">
-            </div>
-            <div class="navbar">
-                <div class="icon">
-                    <i class="fa-solid fa-bell"></i>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+        <link rel="stylesheet" href="./assets/css/style.css" />
+        <link rel="stylesheet" href="./assets/css/table.css" />
+        <link rel="stylesheet" href="./assets/css/modal.css" />
+    </head>
+    <body>
+        <div class="all">
+            <div class="header">
+                <div class="logo">
+                    <img src="./assets/images/bg-shop.jpg" alt="" />
                 </div>
-                <div class="login">
-                    <a href="">Đăng ký | </a>
-                    <a href="./login.html">Đăng nhập</a>
+                <div class="navbar">
+                    <div class="icon">
+                        <i class="fa-solid fa-bell"></i>
+                    </div>
+                    <div class="login">
+                        <a href="">Đăng ký | </a>
+                        <a href="./login.html">Đăng nhập</a>
+                    </div>
+                </div>
+            </div>
+            <div class="slidebar">
+                <div class="nav">
+                    <ul id="items">
+                        <li id="admin"><a href="./adminManamegent.html">Quản lý admin</a></li>
+                        <li><a href="./userManamengent.html">Quản lý người dùng</a></li>
+                        <li><a href="./productManamegent.html">Quản lý sản phẩm</a></li>
+                        <li><a href="./catalogManamegent.html">Quản lý danh mục</a></li>
+                        <li><a href="./oder.html">Đơn hàng</a></li>
+                    </ul>
+                </div>
+                <div class="container">
+                    <div class="box">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="top">
+                                    <h4 class="card-title">Đơn hàng</h4>
+                                </div>
+                                <div class="middle">
+                                    <div class="middle-wrapper">
+                                        <i class="fa-solid fa-arrow-up"></i>
+                                        <span>100</span>
+                                    </div>
+                                    <span class="text">Theo tuần</span>
+                                </div>
+                                <div class="bottom">
+                                    <span>80%</span>
+                                    <div class="progress">
+                                        <div class="progress-bar" style="width: 80%; height: 6px"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="top">
+                                    <h4 class="card-title">Lợi nhuận</h4>
+                                </div>
+                                <div class="middle">
+                                    <div class="middle-wrapper">
+                                        <i class="fa-solid fa-arrow-up"></i>
+                                        <span>1.200.000đ</span>
+                                    </div>
+                                    <span class="text">Theo tuần</span>
+                                </div>
+                                <div class="bottom">
+                                    <span>2.6%</span>
+                                    <div class="progress">
+                                        <div class="progress-bar" style="width: 60%; height: 6px"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <canvas id="myChart" style="width: 100%; max-width: 600px; height: auto"></canvas>
                 </div>
             </div>
         </div>
-        <div class="slidebar">
-            <div class="nav">
-                <ul id="items">
-                    <li id ="admin"><a href="./adminManamegent.html">Quản lý admin</a></li>
-                    <li><a href="./userManamengent.html">Quản lý người dùng</a></li>
-                    <li><a href="./productManamegent.html">Quản lý sản phẩm</a></li>
-                    <li><a href="./catalogManamegent.html">Quản lý danh mục</a></li>
-                    <li><a href="./oder.html">Đơn hàng</a></li>
-                </ul>
-            </div> 
-        </div>
-    </div>
-</body>
+
+        <script>
+            var xValues = ["T-SHIRTS", "HOODIES", "SWEATERS", "POLO", "JACKET"];
+            var yValues = [55, 49, 44, 24, 15];
+            var barColors = ["#ffa8ab", "#00aba9", "#2b5797", "#e8c3b9", "#FD5F32"];
+
+            new Chart("myChart", {
+                type: "doughnut",
+                data: {
+                    labels: xValues,
+                    datasets: [
+                        {
+                            backgroundColor: barColors,
+                            data: yValues,
+                        },
+                    ],
+                },
+                options: {
+                    title: {
+                        display: true,
+                        text: "Danh mục bán chạy",
+                    },
+                },
+            });
+        </script>
+    </body>
 </html>
